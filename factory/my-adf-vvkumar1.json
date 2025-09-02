@@ -1,0 +1,9 @@
+{
+	"name": "my-adf-vvkumar1",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "84e22777-4fe5-43d0-9dfd-925bfd8248f4",
+		"tenantId": "d06d90cd-15e7-4025-8434-70b9b0cde2f7"
+	}
+}
