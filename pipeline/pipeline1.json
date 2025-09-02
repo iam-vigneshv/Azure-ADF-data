@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "Copycsv_git",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -18,9 +18,8 @@
 					"source": {
 						"type": "DelimitedTextSource",
 						"storeSettings": {
-							"type": "AzureBlobStorageReadSettings",
-							"recursive": true,
-							"enablePartitionDiscovery": false
+							"type": "HttpReadSettings",
+							"requestMethod": "GET"
 						},
 						"formatSettings": {
 							"type": "DelimitedTextReadSettings"
@@ -49,13 +48,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "DelimitedText3",
+						"referenceName": "http_lser_git",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "DelimitedText4",
+						"referenceName": "DelimitedText5",
 						"type": "DatasetReference"
 					}
 				]
